@@ -756,9 +756,6 @@
                                                 Excelência para ensinar. <br>
                                                 Acolhimento para crescer.
                                             </h1>
-                                            <p class="subtitle">
-                                                Vem ver de perto! Matrículas abertas.
-                                            </p>
                                             <a href="https://api.whatsapp.com/send/?phone=554199200105&text&app_absent=0" target="_blank" class="btn-red">CONHEÇA A <span>EXPERIÊNCIA MEDIANEIRA</span></a>
                                         </div>
                                     </div>
@@ -766,7 +763,7 @@
 
                                 <section class="space-child-needs bg-light">
                                     <div class="img-container">
-                                        <img src="https://d335luupugsy2.cloudfront.net/cms/files/195337/1692199410/$ttecc7cotg" alt="O espaço que o seu filho precisa para crescer!">
+                                        <img src="./photos/experiencia.png" alt="O espaço que o seu filho precisa para crescer!">
                                     </div>
                                     <div class="text-content">
                                         <h2>
@@ -867,15 +864,15 @@
                                         </div>
                                         <div class="slider-wrapper">
                                             <button class="slide-arrow" id="slide-arrow-prev">
-                &#8249;
-            </button>
+                                                &#8249;
+                                            </button>
                                             <button class="slide-arrow" id="slide-arrow-next">
-                &#8250;
-            </button>
+                                                &#8250;
+                                            </button>
                                             <ul class="slides-container" id="slides-container">
                                                 <li class="slide"><img src="photos/ambientes-integrados-a-natureza.png" alt="Ambientes integrados à Natureza"></li>
                                                 <li class="slide"><img src="photos/praticas-esg.png" alt="Práticas ESG"></li>
-                                                <li class="slide"><img src="photos/tecnolodia-aliada-a-aprendizagem.png" alt="Tecnologia aliada à aprendizagem"></li>
+                                                <li class="slide"><img src="photos/tecnologia-aliada-a-aprendizagem.png" alt="Tecnologia aliada à aprendizagem"></li>
                                             </ul>
                                         </div>
                                         <div class="btn-container text-center">
@@ -1973,7 +1970,7 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
             border-radius: 5px;
             padding: 1.1rem 1rem;
             text-align: center;
-            font-size: 20px;
+            font-size: 24px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
@@ -1987,6 +1984,12 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
         }
         .btn-red:hover span{
             color: var(--terciary-color);
+        }
+        @media(max-width:1100px){
+            .btn-red {
+                padding: 1.1rem .25rem;
+                font-size: 16px;
+            }
         }
         .btn-yellow {
             display: inline-block;
@@ -2054,43 +2057,46 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
 
         .banner {
             background-image: url('./photos/bg_1.png');
-            background-position: center;
             background-repeat: no-repeat;
             padding: 200px 0;
         }
 
         .banner h1 {
             color: #FFF;
-            font-size: 2.25rem;
+            font-size: 44px;
             font-style: normal;
             font-weight: 700;
             line-height: normal;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
         }
 
         .banner .subtitle {
             color: #FFF;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-style: normal;
             font-weight: 300;
             line-height: 36px;
-            margin-bottom: 2rem;
-        }
-
-        .banner-content {
-            max-width: 500px;
+            margin-bottom: 1rem;
         }
         @media(max-width:1100px){
-                .banner {
-                    background-position: 70%;
-                }
-                
+            .banner h1 {
+                color: #FFF;
+                font-size: 2.25rem;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-bottom: 1rem;
+            }
+            .banner {
+                background-position-x: 80%;
+                background-image: url('./photos/bg_1_mobile.png');
+            }
         }
         /* SPACE CHILD NEEDS */
         .space-child-needs {
             margin: auto;
             display: grid;
-            grid-template-columns: 60% 40%;
+            grid-template-columns: 50% 50%;
             padding-top: 5rem;
             padding-bottom: 15rem;
         }
@@ -2098,6 +2104,9 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
         .space-child-needs .text-content {
             padding-left: 4rem;
             padding-right: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .space-child-needs h2 {
@@ -2124,7 +2133,6 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
         .space-child-needs .btn-container {
             margin-top: 4rem;
         }
-
         /*CARDS FEATURES*/
 
         .cards-features {
@@ -2384,7 +2392,7 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
 
         .education .child-education {
             display: grid;
-            grid-template-columns: 45% 55%;
+            grid-template-columns: 50% 50%;
             background: #E5AE30;
         }
 
@@ -2398,10 +2406,6 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
             display: grid;
             grid-template-columns: 45% 55%;
             background: #004F9F;
-        }
-
-        .education .child-education .img-container {
-            margin-left: -130px;
         }
 
         .education .high .img-container {
@@ -2588,7 +2592,7 @@ Z3JhZGVjZW1vcy1wZWxvLWNvbnRhdG8=
                 max-width: 100%;
             }
             .banner {
-                padding: 100px 0;
+                padding: 25px 0 390px 0;
             }
             .cards-features {
                 margin-top: -11rem;
